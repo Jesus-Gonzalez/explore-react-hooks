@@ -1,25 +1,16 @@
 # Explore React Hooks
 
-## Description
+## useReducer
 
-We're exploring the latest React hooks, in order to understand and learn about how to implement any for whatever use case we find them suitable.
+In this chapter we're going to know more and learn about `useState` hook.
 
-We'll try to cover advanced topics on React hooks, including optimization, memoization, etc.
+We will understand how to use it, what problem it solves and why would you use it in a real application.
 
-## Repository
+## Technical
 
-I've split every feature on branches.
+The hook has the following signature: `[value, setter] = useState(initialValue | initFunction)`
 
-You will find every feature in incrementing chapter branches, using the following format:  
-feature/[n]/[description] - where `n` is the chapter and `description` the use case to cover.
-
-eg: feature/1/useState, feature/2/useMemo,
-## Technologies
-
-I've used nextjs to implement the functionality for ease of use.
-
-Using the latest reactjs build.
-
-# Explorando React Hooks
-## Descripción
-
+`value` is the current value for the state property. It does mutate.
+`setter` is the function you use to set a new value for the state property. It does not mutate.
+`initialValue`; initial value for the state property.
+`initFunction`: deferred function that returns the initial value. Its signature: `() => initialValue`
